@@ -5,3 +5,7 @@ Meteor.publish('allPosts', function(){
 Meteor.publish('singlePost', function(id){
   return Posts.find(id);
 });
+
+Meteor.publish('authorPost', function(author){
+  return Posts.find(author);
+});

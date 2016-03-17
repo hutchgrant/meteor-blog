@@ -13,6 +13,14 @@
           {{/linkTo}}
         </li>
         <li>
+		{{#with currentUser}}
+			{{#with profile}}
+		    <a href="{{pathFor 'authorPost' author=username}}">Your Entries</a>
+			{{/with}}
+		{{/with}}
+ 
+        </li>
+        <li>
           {{#linkTo route='newPost'}}
             Add new post
           {{/linkTo}}

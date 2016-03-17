@@ -1,6 +1,8 @@
 <template name="postPage">
+  {{#if title}}
   <h2>{{title}}</h2>
   <h5>{{createdAt}}</h5>
   <p>{{body}}</p>
   <p>by {{author}}</p>
+ {{/if}}
 </template>
