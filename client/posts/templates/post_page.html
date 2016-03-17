@@ -1,6 +1,25 @@
 <template name="postPage">
   {{#if title}}
   <h2 class="blog-title">{{title}}</h2>
+
+	<div class="dropdown dropdown-blog">
+	  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+		<span class="caret"></span>
+	  </button>
+	  <ul class="dropdown-menu dropdown-blog-menu" aria-labelledby="dropdownMenu1">
+		<li>
+		<a href="{{pathFor 'editPost' _id=_id}}">
+		 	Edit
+		</a>
+		</li>
+		<li>	
+		<a href="{{pathFor 'delPost' _id=_id}}">
+     		Delete
+		</a>
+		</li>
+	  </ul>
+	</div>
+
   <h5 class="blog-date">{{createdAt}}</h5>
   <p class="blog-body">{{body}}</p>
   <p class="blog-body">by 

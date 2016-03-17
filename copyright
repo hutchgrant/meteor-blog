@@ -2,6 +2,10 @@ Files: *
 Copyright: 2016 Grant Hutchinson <h.g.utchinson@gmail.com>
 License: GPL-3.0+
 
+Files: /public/images/*
+Copyright: copyright of their respective owners
+License: none. This is for research/educational purposes only, covered under fair use/dealing
+
 License: GPL-3.0+
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -18,5 +22,3 @@ License: GPL-3.0+
  .
  On Debian systems, the complete text of the GNU General
  Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
-
-and is licensed under the GPL version 3, see above.

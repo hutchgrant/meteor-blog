@@ -26,10 +26,17 @@ a {
 }
 
 .blog-author{
-	color:red;
+	color:white;
 	size:14px;
 }
 
 .form-group label{
 	color:white;
+}
+
+.dropdown-blog{
+    margin-left: -40px;
+    margin-top: -40px;
+}
+.dropdown-blog-menu{
 }

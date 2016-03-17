@@ -1,0 +1,14 @@
+<template name="delPost">
+  <h3 class="blog-title">Are you sure you want to delete?</h3>
+	<h5 class="blog-title">{{title}}</h5>
+	{{#autoForm collection="Posts" id="deletePostForm" type="method-update" meteormethod="delPost" doc=this}}
+    <fieldset>
+		{{> afFieldInput name="author" type="hidden" value=author}}
+		{{> afFieldInput name="createdAt" type="hidden" value=createdAt }}
+		{{> afFieldInput name="page" type="hidden" value=_id }}
+      	{{> afFieldInput name='title' type="hidden" value=title}}
+      	{{> afFieldInput name='body' type="hidden" rows=6 value=body}}
+    </fieldset>
+    <button type="submit" class="btn btn-primary">Delete</button>
+  {{/autoForm}}
+</template>

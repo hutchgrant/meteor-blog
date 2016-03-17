@@ -1,0 +1,15 @@
+<template name="editPost">
+  <h1 class="blog-body">Edit entry</h1>
+ <!-- {{> quickForm collection="Posts" id="updatePostForm" doc=this type="method-update" meteormethod="updatePost"}} -->
+{{#autoForm collection="Posts" id="updatePostForm" type="method-update" meteormethod="updatePost" doc=this}}
+    <fieldset>
+		{{> afFieldInput name="author" type="hidden" value=author}}
+		{{> afFieldInput name="createdAt" type="hidden" value=createdAt }}
+		{{> afFieldInput name="page" type="hidden" value=_id }}
+      	{{> afQuickField name='title' value=title}}
+      	{{> afQuickField name='body' rows=6 value=body}}
+    </fieldset>
+    <button type="submit" class="btn btn-primary">Update</button>
+  {{/autoForm}}
+
+</template>
