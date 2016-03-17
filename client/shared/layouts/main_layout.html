@@ -8,9 +8,9 @@
       </div>
       <ul class="nav navbar-nav">
         <li>
-          {{#linkTo route='root'}}
-            Home
-          {{/linkTo}}
+          	{{#linkTo route='all'}}
+            All Blogs
+          	{{/linkTo}}
         </li>
         <li>
 		{{#with currentUser}}
@@ -21,9 +21,11 @@
  
         </li>
         <li>
+		{{#if currentUser}}
           {{#linkTo route='newPost'}}
             Add new post
           {{/linkTo}}
+		{{/if}}
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">

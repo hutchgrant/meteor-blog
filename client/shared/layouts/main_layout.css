@@ -1,7 +1,35 @@
 .navbar-default {
     background-color: #000000;
+	margin-bottom:0px;
 }
 
 .navbar-brand {
-color:white;
+	color:white;
+}
+
+a {
+	color:#A9C6DE;
+}
+.blog-title{
+	color:white;
+	size:20px;
+}
+
+.blog-date{
+	color:white;
+	size:12px;
+}
+
+.blog-body{
+	color:white;
+	size:14px;
+}
+
+.blog-author{
+	color:red;
+	size:14px;
+}
+
+.form-group label{
+	color:white;
 }

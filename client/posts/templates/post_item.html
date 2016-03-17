@@ -1,15 +1,13 @@
 <template name="postItem">
-  <h3>
+  <h3 class="blog-title">
     {{#linkTo route='singlePost'}}
       {{title}}
     {{/linkTo}}
-  </h3><h5>{{createdAt}}</h5>
-  <p>
-      {{body}}
-  </p>
-  <h5>
+  </h3><h5 class="blog-date">{{createdAt}}</h5>
+  <p class="blog-body">by <span class="blog-author">
 	{{#linkTo route='authorPost'}}
-      by {{author}}
+     {{author}}
     {{/linkTo}}  
-	</h5>
+	</span>
+	</p>
 </template>

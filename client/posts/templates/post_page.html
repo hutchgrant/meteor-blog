@@ -1,8 +1,14 @@
 <template name="postPage">
   {{#if title}}
-  <h2>{{title}}</h2>
-  <h5>{{createdAt}}</h5>
-  <p>{{body}}</p>
-  <p>by {{author}}</p>
- {{/if}}
+  <h2 class="blog-title">{{title}}</h2>
+  <h5 class="blog-date">{{createdAt}}</h5>
+  <p class="blog-body">{{body}}</p>
+  <p class="blog-body">by 
+	<span class="blog-author">	
+	{{#linkTo route='authorPost'}}
+     	{{author}}
+    {{/linkTo}}
+    </span>
+  </p>
+  {{/if}}
 </template>
